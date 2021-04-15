@@ -70,7 +70,7 @@ def initial_database():
     user = add_role('user')
 
     # add users
-    kelby = add_user('Kelby', 'Barnewolt', 'kelby@kelby.com', 'abc123', 'admin')
+    mike = add_user('Mike', 'Colbert', 'mike@mike.com', 'abc123', 'admin')
 
     # add categories
     main = add_category('Main dishes')
