@@ -2,3 +2,47 @@ label.print{
   font-style: italic;
   font-weight: bold;
 }
+
+.narbar-dark .navbar-nav .nav-link{
+  color: lightcoral;
+}
+
+.btn-outline-success{
+  color: lightcoral;
+  border-color: lightcoral;
+}
+
+
+.btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active, .btn-outline-success.active, 
+.open>.dropdown-toggle.btn-primary {
+  color:white;
+  background-color: lightcoral;
+  border-color: white;
+}
+
+.btn-outline-success:not(:disabled):not(:disabled):active{
+  color:white;
+  background-color:lightcoral;
+  border-color: white;
+}
+
+.btn-primary{
+  color:white;
+  background-color: lightcoral;
+  border-color: white;
+}
+
+
+.btn-primary:hover .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+  color:white;
+  background-color: lightcoral;
+  border-color: white;
+}
+
+.btn-primary:not(:disabled):not(:disabled):active{
+  color:white;
+  background-color: lightcoral;
+  border-color: white;
+}
+
+
