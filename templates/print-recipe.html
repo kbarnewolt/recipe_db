@@ -5,6 +5,12 @@
 
 {% block body %}
 
+{% block pageDescription %}<meta
+    name="description"
+    content="Print a recipe from Kelby's Recipes Web Application."
+/>
+{% endblock %}
+
 <h3>{{ recipe['recipe_name'] }}</h3>
 <hr>
 <div class="form-group">

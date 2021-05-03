@@ -1,10 +1,16 @@
 
 {% extends 'base.html' %}
 
-{% block title %} My Recipes Login {% endblock %}
+{% block title %} Login to Kelby's Recipes {% endblock %}
 
 
 {% block body %} 
+
+{% block pageDescription %}<meta
+    name="description"
+    content="Login to Kelby's Recipes Web Application."
+/>
+{% endblock %}
 
 <form method=POST action="{{ url_for('login') }}">
 <p>

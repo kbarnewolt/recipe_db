@@ -1,10 +1,16 @@
 {% extends 'base.html' %}
 
-{% block title %} My Recipes {% endblock %}
+{% block title %} Kelby's Drink Recipes - Alcoholic Drink Recipes {% endblock %}
 
+{% block pageDescription %}<meta
+    name="description"
+    content="This is a website with recipes for popular alcoholic drinks."
+/>
+{% endblock %}
 
 {% block body %} 
-<img src="../static/Logo.PNG" class="Logo">
+
+<img src="../static/Logo.PNG" class="Logo" alt="Kelby's Recipes Logo">
 <h1>Newest Recipes</h1>
 
 {% if all_recipes %}
