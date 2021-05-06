@@ -321,15 +321,15 @@ def delete_category(category_id):
 
 # authenticated users can view al the recipes
 @app.route('/recipes', methods=['GET', 'POST'])
-@login_required
-@roles_required('admin', 'contributor', 'user')
+#@login_required
+#@roles_required('admin', 'contributor', 'user')
 def view_recipes():
     return render_template('recipes.html', all_recipes=recipes.find())
 
 # authenticated users can print a recipe
 @app.route('/recipes/print-recipe/<recipe_id>', methods=['GET', 'POST'])
-@login_required
-@roles_required('admin', 'contributor', 'user')
+#@login_required
+#@roles_required('admin', 'contributor', 'user')
 def print_recipe(recipe_id):
     print_recipe = recipes.find_one({'_id': ObjectId(recipe_id)})
     if print_recipe:
@@ -416,4 +416,4 @@ def delete_recipe(recipe_id):
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
