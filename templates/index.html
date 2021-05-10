@@ -2,12 +2,6 @@
 
 {% block title %} Kelby's Drink Recipes - Alcoholic Drink Recipes {% endblock %}
 
-{% block pageDescription %}<meta
-    name="description"
-    content="This is a website with recipes for popular alcoholic drinks."
-/>
-{% endblock %}
-
 {% block body %} 
 
 <img src="../static/Logo.PNG" class="Logo" alt="Kelby's Recipes Logo">
@@ -33,7 +27,7 @@
             <td> {{ recipe['category'] }}</td>
             <td> {{ recipe['recipe_owner'] }}</td>
             <td> {{ recipe['added_by'] }}</td>
-            <td> {{ recipe['date_added'] }}</td>
+            <td> {{ recipe['date_added'].strftime("%m/%d/%Y") }}</td>
             <td>
                 <form action="{{ url_for('print_recipe', recipe_id=recipe['_id']) }}" method="POST">
                     <input type="submit" class="btn btn-primary" value="View Recipe" />
